@@ -1,0 +1,15 @@
+<div>
+  <h3>
+    Your Details</h3>
+  <div>
+    <label>Enter your First Name: </label>
+    <input [(ngModel)]="firstName" placeholder="First Name" [class.invalid-credentials]="isSuccess()===false" style="width:20%; margin-bottom:1%;"
+    />
+  </div>
+  <div>
+    <label>Enter your Last Name: </label>
+    <input [(ngModel)]="lastName" placeholder="Last Name" [class.invalid-credentials]="isSuccess()===false" style="width:20%; margin-bottom:1%;"
+    />
+  </div>
+  <button [class.valid-name]="isSuccess()" style="width:5%; margin-bottom:1%;" [disabled]="!isSuccess()" (click)="onProceedClick()">Proceed</button>
+</div>

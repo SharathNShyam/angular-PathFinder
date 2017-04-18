@@ -1,0 +1,27 @@
+<div>
+    <h2>Hall of Fame</h2>
+    <table class="table table-striped">
+        <thead>
+            <ng-template ngFor let-col [ngForOf]="columns" let-colIndex="index">
+                <th style="border: 0.5px solid black; margin: 0px;">
+                    {{col.descr}}
+                </th>
+            </ng-template>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of UserList; let rowind = index">
+                <ng-template ngFor let-col [ngForOf]="columns" let-colIndex="index" style="margin: 0px;">
+                    <td style="border: 0.5px solid black; margin: 0px;">
+
+                        <span *ngIf="colIndex==0" [class.index]='colIndex==0'>{{rowind + 1}} </span>
+                        <span *ngIf="colIndex==1"> {{user.firstName}} {{user.lastName}}</span>
+                        <span *ngIf="colIndex==2"> {{user.score}}</span>
+                        <span *ngIf="colIndex==3"> {{user.level}}</span>
+
+                    </td>
+                </ng-template>
+            </tr>
+        </tbody>
+    </table>
+</div>

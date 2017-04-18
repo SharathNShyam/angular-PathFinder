@@ -1,0 +1,20 @@
+.detail{
+    top:0;
+    bottom:0;
+    left:0;
+    width: 100%;
+    margin: 20px;
+}
+
+.invalid-credentials {
+    border:1px solid red;
+}
+
+.valid-name 
+{
+    border:1px solid black;
+    font-weight: bold;
+    color: black;
+    background-color: darkgray;
+}
+
