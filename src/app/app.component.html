@@ -1,0 +1,12 @@
+<div *ngIf="showDemo==false">
+    <h1>Welcome to Path Finder. Test your Memory</h1>
+    <h2>Start as a New Player</h2>
+    <user (UserChanged)="onUserChanged($event)"></user>
+    <users [UserList]="Users"></users>
+</div>
+<div *ngIf="showDemo">
+    <maze  (TileClick)="onTileClick($event)" [level]="level" [user]="user"></maze>
+</div>
+<div *ngIf="showDemo">
+    <button class="backbutton" (click)="onGoBackClick()">Home</button>
+</div>
