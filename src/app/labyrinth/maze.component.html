@@ -1,0 +1,23 @@
+<div>
+    <div class="name-info">
+        <label style="font-weight : bold; color: black"> Participant's Name : </label>
+        <label style="font-weight : bolder; color: black"> {{user.firstName}} {{user.lastName}}</label>
+    </div>
+    <div class="name-info">
+        <label style="font-weight : bolder; color: black"> Participant's Level : </label>
+        <label style="font-weight : bold; color: black"> Level {{level-3}}</label>
+    </div>
+    <table>
+        <tr *ngFor="let row of rows; let rowind = index">
+            <td *ngFor="let col of cols; let colind = index">
+                <div>
+                    <tile (tileClick)="onTileClick($event)" [tile]="(rowind * level + colind+ 1)" [isInThePath]="getPath(rowind * level + colind+ 1)"
+                        [Timeout]="timedOut" [Path]="path"></tile>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <timer [sec]='time' (finish)='finish(time)'></timer>
+    <h2 style="color: darkred" *ngIf="Error.isError"> {{Error.message}}</h2>
+
+</div>

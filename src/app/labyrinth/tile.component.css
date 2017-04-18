@@ -1,0 +1,74 @@
+
+/* Styles go here */
+
+
+.tileHighlight {
+    position: relative;
+    border: 1px solid #504d49;
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: #100d09;
+    background : yellow;
+    font-weight: bold;
+    line-height: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tile.tileWrong {
+
+    background: darkred;
+    
+}
+
+.tile.tileRight {
+
+    background: green;
+    
+}
+
+.tile {
+    position: relative;
+    border: 1px solid #504d49;
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: #100d09;
+    background: #938d85;
+    font-weight: bold;
+    line-height: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.tile:hover {
+    background-image:
+    radial-gradient(
+        circle at bottom right,
+        #a49e96,
+        #605d59
+    );
+}
+
+.tile.tileWrong:hover {
+    background-image:
+    radial-gradient(
+        circle at bottom right,
+        #a49e96,
+        darkred
+    );
+}
+
+.tile.tileRight:hover {
+    background-image:
+    radial-gradient(
+        circle at bottom right,
+        #a49e96,
+        green
+    );
+}
+

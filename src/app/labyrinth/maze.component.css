@@ -1,0 +1,10 @@
+
+.name-info{
+    height: 50px;
+    border: 2px transparent black;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
