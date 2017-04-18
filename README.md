@@ -1,7 +1,7 @@
 # angular-PathFinder
 The Path Finder game app developed using angular4
 
-I have Angular 4 for developing the UI and also Lite Server as a static file server to serve the requests.
+I have used Angular 4 for developing the UI and also Lite Server as a static file server to serve the requests.
 This requires Angular libarires and Node to be present on the machine to work.
 
 Prerequisites
