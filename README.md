@@ -6,7 +6,7 @@ This requires Angular libarires and Node to be present on the machine to work.
 
 Prerequisites
 
-Node.js and npm are essential to to build and run this application.
+1. Node.js and npm are essential to to build and run this application.
 
 Get it now if it's not already installed on your machine.
 Verify that you are running at least node v4.x.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors.
@@ -15,7 +15,7 @@ Verify that you are running at least node v4.x.x and npm 3.x.x by running node -
 Install npm packages
 
 Install the npm packages described in the package.json and verify that it works:
-Run the command file - install.cmd
+1. Run the command file - install.cmd
 
 Running the App and Start to Play
 Download the repository or clone it on to your machine
