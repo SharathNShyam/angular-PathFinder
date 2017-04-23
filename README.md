@@ -17,8 +17,10 @@ Install npm packages
 Install the npm packages described in the package.json and verify that it works:
 1. Run the command file - install.cmd
 
-Running the App and Start to Play
+Running the App and Start to Play :
+
 Download the repository or clone it on to your machine
+
 Now run the corresponding cmd file launch the browser of your choice
 1. start-chrome.cmd : will launch Google Chrome
 2. start-firefox.cmd : will launch Firefox
@@ -26,6 +28,7 @@ Now run the corresponding cmd file launch the browser of your choice
 
 
 Framework of Choice
+
 Here I have used Angular 4 as the Javascript framework to develop UI becasue of the following reasons
 1. The databinding support in Angular makes data and UI interactions very easy
 2. The support for Typescript helps to develop Javascript projects in a ´n Object Oriented way
